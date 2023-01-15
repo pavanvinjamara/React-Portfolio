@@ -1,0 +1,18 @@
+{
+    "projects": [
+        {
+            "cover": "/myProjects/NewsHomePage.png",
+            "title": "News Home Page",
+            "description":"HTML, CSS , JS",
+            "site": "https://voluble-kangaroo-df40ab.netlify.app/",
+            "github":"https://github.com/pavanvinjamara/News-Home-Page-HTML-CSS-JS"
+        },
+        {
+            "cover": "/myProjects/HotelChandamama.png",
+            "title": "Hotel Chandamama",
+            "description":"HTML, CSS , JS",
+            "site": "https://super-bavarois-d9250f.netlify.app/",
+            "github":"https://github.com/pavanvinjamara/Hotel-Chandamama"
+        }
+    ]
+}

@@ -1,0 +1,20 @@
+.links{
+    position: absolute;
+ top: 85%; 
+    ul{
+        display: flex;
+            li{
+                padding-left: 50px;
+                a svg{
+                    color: #eb6618;
+                    height: 30px;
+                    z-index: 99999;
+
+                    &:hover{
+                        color: #ffd700;
+                        height: 50px;
+                    }
+                }
+            }
+        }
+}

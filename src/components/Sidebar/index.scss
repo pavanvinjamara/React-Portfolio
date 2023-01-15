@@ -1,0 +1,247 @@
+.navbar {
+    background: #181818;
+    width: 60px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    z-index: 3;
+    min-height: 500px;
+
+    .logo{
+        display: block;
+        padding: 0px 0;
+
+        .logoName{position: absolute;
+            top: 25px;
+            color: white;
+            font-family: 'Arial Narrow Bold';
+            margin-left: 5px;
+            font-size: 18px;
+            font-weight: 700;
+        
+        }
+    
+    img{
+        display: block;
+        margin: 8px auto;
+        width: 60px;
+        height: auto;
+    }
+  }
+}
+
+  nav{
+    display: block;
+    text-align: center;
+    position: absolute;
+    height: 210px;
+    top: 50%;
+    margin-top: -120px;
+    width: 100%;
+  }
+
+  a{
+    font-size: 22px;
+    color: #4d4d4e;
+    display: block;
+    line-height: 51px;
+    position: relative;
+    text-decoration: none;
+
+    i{
+        transition: all 0.3s ease-out;
+    }
+
+    &:hover{
+        color: #ffd700;
+
+        svg{
+            opacity: 0;
+        }
+
+        &:after{
+            opacity: 1;
+        }
+    }
+
+
+    &:after{
+        content: '';
+        font-size: 9px;
+        letter-spacing: 2px;
+        position: absolute;
+        bottom: 0;
+        display: block;
+        width: 100%;
+        text-align: center;
+        opacity: 0;
+        transition: all 0.3s ease-out;
+    }
+
+    // &:first-child {
+    //     &:after{
+    //         content: 'HOME';
+    //     }
+    // }
+  }
+
+  a.home-link {
+    &:after{
+        content: 'HOME';
+    }
+}
+
+  a.about-link{
+    &:after{
+        content: 'ABOUT';
+    }
+}
+
+a.skills-link {
+    &:after{
+        content: 'SKILLS';
+    }
+}
+
+a.projects-link {
+    &:after{
+        content: 'PROJECTS';
+    }
+}
+
+a.contact-link{
+    &:after{
+        content: 'CONTACT';
+    }
+}
+
+a.active{
+    svg{
+        color: #ffd700;
+    }
+}
+
+ul{
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    display: block;
+    padding: 0;
+    list-style: none;
+    text-align: center;
+    margin: 0;
+
+    li{
+        a{
+            padding: 7px 0;
+            display: block;
+            font-size: 15px;
+            line-height: 16px;
+
+            &:hover svg {
+                color: #ffd700;
+                height: 40px;
+                opacity: 1;
+            }
+        }
+    }
+}
+
+.hamburger-icon, .close-icon{
+    display: none;
+}
+
+  
+  @media screen and (max-width: 850px) {
+    .navbar{
+        box-sizing: border-box;
+        background: #181818;
+        position: fixed;
+        width: 100%;
+        height: auto;
+        min-height: auto;
+        top: 0;
+        
+        .logo{
+            top: 0;
+            z-index: 999;
+            
+            .logoName{
+                font-size: 12px;
+                top: 0;
+                left: 30px;
+                z-index: 100;
+            }
+            img{
+                width: 40px;
+                height: 40px;
+                float: left;
+                // z-index: 200;
+            }
+
+        }
+        
+
+        ul, nav{
+            display: none;
+        }
+       
+       
+        nav{
+            // display: none;
+            // display: flex;
+          .displayFlex{
+            display: flex;
+            justify-content: space-around;
+          }
+          
+            
+            width: 100%;
+            height: 120px;
+            background-color: #181818;
+            top: 0;
+            left: 0;
+            position: fixed;
+            z-index: 99;
+            margin: 0;
+
+            &.mobile-show{
+                display: block;
+            }
+            .LINK{
+                top: 60px;
+                // height: 10px;
+            }
+
+            a.LINK {
+                &:after{
+                    top: 0;
+                }
+            }
+           
+        
+        }
+        
+        
+
+        .hamburger-icon, .close-icon{
+            display: block;
+            position: absolute;
+            top: 15px;
+            right: 15px;
+
+        }
+
+    }
+    
+    
+}
+
+@media screen and (max-width: 400px) {
+    .navbar{
+        position: fixed;
+        top: 0;
+    }
+}
+
+ 
