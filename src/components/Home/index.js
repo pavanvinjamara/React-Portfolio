@@ -63,7 +63,7 @@ const Home = () => {
 
               <h2>LET'S STRIVE FOR "GREATER COLLECTIVE ENLIGHTMENT".</h2>
               
-              <Link to="/contant" className="flat-button">CONTACT ME</Link>
+              <Link to="/contact" className="flat-button">CONTACT ME</Link>
              
             </div>
               <div className='lottiecontain' ref={container}></div>
